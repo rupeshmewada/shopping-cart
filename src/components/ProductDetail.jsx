@@ -58,6 +58,7 @@ export default function ProductDetail({ items, cart, setCart }) {
                       theme="light"
                   // transition={Bounce}
                   />
+                  
       <div className="col-md-8 text-center m-auto">
         <div className="img-wrapper " >
           <div className="">

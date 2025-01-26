@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import Product from './Product'
 import { items } from './Data'
 
+
 export default function SearchItem({cart, setCart }) {
   const {term} = useParams()
 
@@ -18,7 +19,7 @@ export default function SearchItem({cart, setCart }) {
 
   return (
     <>
-    <Product items={filterData} />
+    <Product items={filterData} cart={cart} setCart={setCart}/>
     </>
   )
 }

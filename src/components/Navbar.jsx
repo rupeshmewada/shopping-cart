@@ -50,7 +50,7 @@ export default function Navbar({ setData, cart }) {
                     <form className=" w-[40%]" onSubmit={handleSubmit}>
                         <input
                             type="text"
-                            className="border w-[100%] rounded-md py-2"
+                            className="border w-[100%] rounded-md p-2"
                             placeholder="search products"
                             onChange={(e) => setSearchItem(e.target.value)}
                         />

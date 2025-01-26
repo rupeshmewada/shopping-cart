@@ -15,7 +15,7 @@ export default function Cart({ cart, setCart }) {
           cart.length > 0 ?
             cart.map((product) => (
 
-              <div className="card my-3  text-center" style={{ width: "600px", margin: 'auto' }}>
+              <div className="card my-3  text-center w-[12rem] md:w-[60%] lg:w-[60%]" style={{ margin: 'auto' }}>
                 <div className="row no-gutters d-flex align-items-center">
                   <div className="col-md-4">
                     {/* <img src={product.} className="card-img" alt="..." /> */}
@@ -26,7 +26,7 @@ export default function Cart({ cart, setCart }) {
                     <div className="card-body">
                       <h1 className="card-title">{product.title}</h1>
                       <p className="card-text">{product.description}</p>
-                      <button className='btn btn-primary mx-3'>{product.price} ₹</button>
+                      <button className='btn btn-primary m-3'>{product.price} ₹</button>
                       <button className='btn btn-warning'
                       >Buy now</button>
                     </div>
@@ -44,7 +44,7 @@ export default function Cart({ cart, setCart }) {
 
         {
           cart.length > 0 &&
-          <div className="container text-center mt-5">
+          <div className="container text-center my-5">
             <button className='btn btn-primary mx-3'>Check Out</button>
             <button className='btn btn-danger mx-3' onClick={clearCart}>Clear Cart</button>
           </div>
