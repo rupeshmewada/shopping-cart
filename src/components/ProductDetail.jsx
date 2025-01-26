@@ -31,33 +31,33 @@ export default function ProductDetail({ items, cart, setCart }) {
     setCart([...cart, obj])
 
     toast('Card added successfully!', {
-      position: "top-right",
-      autoClose: 2000,
-      hideProgressBar: false,
-      closeOnClick: false,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-      // transition: Bounce,
-    });
+               position: "top-right",
+               autoClose: 2000,
+               hideProgressBar: false,
+               closeOnClick: false,
+               pauseOnHover: true,
+               draggable: true,
+               progress: undefined,
+               theme: "dark",
+               // transition: Bounce,
+           });
   }
 
   return (
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick={false}
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      // transition={Bounce}
-      />
+       <ToastContainer
+                      position="top-right"
+                      autoClose={2000}
+                      hideProgressBar={false}
+                      newestOnTop={false}
+                      closeOnClick={false}
+                      rtl={false}
+                      pauseOnFocusLoss
+                      draggable
+                      pauseOnHover
+                      theme="light"
+                  // transition={Bounce}
+                  />
       <div className="col-md-8 text-center m-auto">
         <div className="img-wrapper " >
           <div className="">

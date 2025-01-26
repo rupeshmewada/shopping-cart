@@ -42,22 +42,22 @@ export default function Product({ items, cart, setCart }) {
                 theme="light"
             // transition={Bounce}
             />
-            <div className="container">
+            <div className="container ">
                 <div className="row">
 
                     {
                         items.map((product) => {
                             return (
                                 <Fragment key={product.id}>
-                                    <div className="col-sm-12 col-md-6 col-lg-4  my-4 text-center" >
-                                        <div className="card" style={{ width: '18rem', textAlign: 'center' }}>
+                                    <div className="col-sm-12 col-md-6 col-lg-4  my-5 text-center flex justify-center" >
+                                        <div className="card w-[10rem] md:w-[18rem] lg:w-[18rem]" style={{  textAlign: 'center' }}>
                                             <Link to={`/product/${product.id}`}>
                                                 <img src={product.imgSrc} className="card-img-top" alt="..." />
                                             </Link>
                                             <div className="card-body">
-                                                <h5 className="card-title">{product.title}</h5>
+                                                <h5 className="card-title text-red-500 ">{product.title}</h5>
                                                 <p className="card-text">{product.description}</p>
-                                                <button className='btn btn-primary mx-3'>{product.price} ₹</button>
+                                                <button className='btn btn-primary mx-3 m-2'>{product.price} ₹</button>
                                                 <button className='btn btn-warning'
                                                     onClick={() => addToCart(product.id, product.category, product.title, product.imgSrc, product.amazonLink, product.description, product.price)}
                                                 >Add to cart</button>
